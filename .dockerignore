@@ -1,0 +1,14 @@
+Dockerfile
+node_modules
+.github
+.git
+.gitignore
+Makefile
+docker-compose.yaml
+README.md
+npm-debug.log
+README.node_modules
+.env*
+.flaskenv*
+!.env.project
+!.env.vault

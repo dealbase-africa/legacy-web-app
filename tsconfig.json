@@ -1,0 +1,48 @@
+{
+  "extends": "@dealbase/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "strictNullChecks": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@components": ["./src/components"],
+      "@pages": ["./src/pages"],
+      "@lib": ["src/lib"],
+      "@src": ["./src"],
+      "components": ["./src/components"],
+      "pages": ["./src/pages"],
+      "lib": ["./src/lib"],
+      "src": ["./src"],
+      "react": ["./node_modules/@types/react"],
+      "framer-motion": ["./node_modules/framer-motion"]
+    },
+    "types": ["vitest/globals"]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/lib/googleAnalytics/index.ts",
+    "src/pages/_error.js",
+    "src/pages/api/tunnel.js",
+    "setupTests.js"
+  ],
+  "exclude": ["node_modules"]
+}
